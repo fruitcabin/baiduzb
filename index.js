@@ -1,1 +1,1 @@
-module.exports = require('./svr/baiduzb');
+module.exports = require('./src/baiduzb');
