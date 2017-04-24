@@ -6,7 +6,7 @@ npm install baiduzb
 
 调用百度地图服务，获取坐标或位置信息
 
-getData
+# getData
 生成数据对象，调用格式：getData(adata, flag=1)
 
 flag为1（根据地址返回坐标时），adata格式：
@@ -26,7 +26,7 @@ flag为2（根据坐标返回地址信息）时，adata格式：
     ak:''
 }
 
-getMapInfoGeocoder
+# getMapInfoGeocoder
 调用百度接口Geocoder，调用格式：getMapInfoGeocoder(adata, aurl, auri, ask, callback)
 
 adata：查询参数，可以使用getData生成。
