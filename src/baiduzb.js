@@ -14,7 +14,7 @@ function genMd5(str) {
 //计算百度地图sn
 function caculateAKSN(sk, url, data){
     var querystr = http_build_query(data)
-    console.log('querystr:'+querystr+'\n');
+    //console.log('querystr:'+querystr+'\n');
     return genMd5(encodeURIComponent(url+'?'+querystr+sk));
 }
 
@@ -67,7 +67,7 @@ function getMapInfoGeocoder(adata, aurl, auri, ask, callback){
     //data.location = encodeURIComponent(data.location);  //这个不需要了，http_build_query内部做了编码处理
     data.sn = sn;
     var url = aurl + http_build_query(data);   
-    console.log('url:'+url+'\n');
+    //console.log('url:'+url+'\n');
     
     //var target = util.format(url,encodeURIComponent(data.location),data.output,data.ak,sn);  //根据字符串模板生成，不再使用这个方法，这样不灵活
     getInfo(url, function(data){
